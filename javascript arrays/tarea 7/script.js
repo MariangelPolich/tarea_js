@@ -7,5 +7,13 @@
 …..
 333
 22
-1/*
+1*/
 
+const número = prompt("Ingrese un número no mayor a 50")
+
+for ( let x = número; x >= 1; x--) {
+    for (let y = 1; y <= x; y++){
+    document.write(x)
+}
+document.write('<br>')
+}
