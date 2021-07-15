@@ -9,11 +9,13 @@
 22
 1*/
 
-const número = prompt("Ingrese un número no mayor a 50")
-
-for ( let x = número; x >= 1; x--) {
-    for (let y = 1; y <= x; y++){
-    document.write(x)
+let numero = prompt("Ingrese un número no mayor a 50");
+while (numero > 50 || Number.isNaN(+numero)) {
+    numero = prompt("No mayor a 50, capo")
 }
-document.write('<br>')
-}
+    for (let x = numero; x >= 1; x--) {
+        for (let y = 1; y <= x; y++) {
+            document.write(x)
+        }
+        document.write('<br>')
+    }
